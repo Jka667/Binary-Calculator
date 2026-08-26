@@ -1,53 +1,91 @@
-# Binary-Calculator
-
-
 # Binary Calculator
 
-This project is a Binary Calculator application built using Python's Tkinter library. It allows users to perform various binary arithmetic operations, including addition, subtraction, multiplication, division, bitwise operations, and two's complement calculations. The application provides a user-friendly interface for inputting binary numbers and displays the results in real-time.
+**Desktop calculator for binary arithmetic, bitwise operations, and bit manipulation.**
+
+A Python Tkinter application for performing binary calculations. Supports arithmetic operations, bitwise logic, bit shifting, and two's complement—ideal for studying binary systems, digital logic, and low-level programming.
 
 ## Features
 
-- **Binary Arithmetic Operations**: 
-  - Addition
-  - Subtraction
-  - Multiplication
-  - Division
-- **Bitwise Operations**:
-  - AND
-  - OR
-  - NOT
-- **Shift Operations**: 
-  - Left and right bit shifting
-- **Two's Complement Calculation**
-- **Input Validation**: Ensures that only binary numbers (0s and 1s) are accepted.
+- ➕ **Arithmetic**: Addition, Subtraction, Multiplication, Division
+- 🔧 **Bitwise Operations**: AND, OR, NOT
+- ⬅️ **Shift Operations**: Left/Right bit shifting
+- 📊 **Two's Complement**: Calculate binary negation
+- ✅ **Input Validation**: Accepts only binary digits (0s and 1s)
+- 🎯 **Real-time Results**: Instant calculation display
+
+## Requirements
+
+- Python 3.x
+- Tkinter (included with Python by default)
 
 ## Installation
 
-1. Ensure you have Python installed on your machine. This application is compatible with Python 3.x.
-2. Install the Tkinter library if it is not already available. Tkinter usually comes pre-installed with Python. You can verify it by running:
-
-   ```bash
-   python -m tkinter
-    If a small window opens, Tkinter is installed correctly.
-
-3. Clone the repository or download the source code.
+1. Clone the repository:
+```bash
 git clone <repository-url>
-
-4. Navigate to the project directory.
 cd binary-calculator
+```
 
-5. Run the application:
+2. Run the application:
+```bash
 python binary_calculator.py
+```
 
----------------------------USAGE------------------------------------------------
-Launch the application. A window will open displaying fields for entering binary numbers, the shift direction, and a shift value.
-Input the desired binary numbers into the respective fields.
-Click the buttons for the operation you wish to perform (Add, Subtract, Multiply, Divide, Shift, Complement, AND, OR, NOT).
-The result will be displayed at the bottom of the window.
-Code Structure
-is_binary(value): Checks if a string contains only bits (0 or 1).
-validate_binary_input(entry, label_text): Validates the binary input in the entry field.
-align_bits(binary1, binary2): Aligns two binary strings by padding them with zeros.
-binary_to_decimal(binary): Converts a binary number to its decimal representation.
-decimal_to_binary(number): Converts a decimal number to its binary representation.
-Arithmetic and bitwise operation functions: Define actions for addition, subtraction, multiplication, division, and bitwise operations.
+## Usage
+
+1. Launch the application
+2. Enter binary numbers in the input fields
+3. Click the desired operation button:
+   - **Add** - Binary addition
+   - **Subtract** - Binary subtraction
+   - **Multiply** - Binary multiplication
+   - **Divide** - Binary division
+   - **AND/OR/NOT** - Bitwise operations
+   - **Shift** - Left/Right bit shifting
+   - **Complement** - Two's complement calculation
+4. View the result at the bottom of the window
+
+### Example
+
+
+Input: 1010 + 1100
+Output: 10110
+
+Input: 1111 (Two's Complement)
+Output: 0001
+
+
+## How It Works
+
+- **is_binary()** - Validates if input contains only 0s and 1s
+- **validate_binary_input()** - Checks field content before processing
+- **align_bits()** - Pads binary strings for proper alignment
+- **binary_to_decimal()** - Converts binary to decimal representation
+- **decimal_to_binary()** - Converts decimal back to binary
+- **Operation functions** - Executes arithmetic, bitwise, and shift operations
+
+## Use Cases
+
+- 🎓 **Learning**: Understand binary arithmetic and bitwise logic
+- 🔐 **Cybersecurity**: Explore binary manipulations for cryptography
+- 💻 **Programming**: Debug bit-level operations
+- 🎮 **Game Development**: Work with binary flags and bit masks
+
+## Notes
+
+- All calculations use Python's built-in binary support
+- Results displayed in binary format
+- Supports positive and negative numbers via two's complement
+- User-friendly GUI with real-time validation
+
+
+
+
+
+
+
+
+
+
+
+
